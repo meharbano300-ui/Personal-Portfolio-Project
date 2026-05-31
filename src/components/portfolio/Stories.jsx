@@ -5,35 +5,35 @@ const stories = [
   {
     name: "Danial",
     role: "CEO \xB7 Sparta Tech Solutions",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    avatar: "/9.jpg",
     companyName: "Sparta Tech \xB7 SaaS Platform",
     text: "Samra built our entire Sparta Tech Solutions website from scratch architecture, design, and deployment. The polish and delivery were world-class."
   },
  {
   name: "Uzma Zahid",
   role: "Founder & Product Lead",
-  avatar: "https://randomuser.me/api/portraits/women/22.jpg",
+  avatar: "/10.jfif",
   companyName: "ABS Groups \xB7 Echo System",
   text: "Working with Samra Amir felt effortless. She translated vague ideas into a luxurious, blazing fast product with real design taste."
 },
   {
     name: "Hassan Malik",
     role: "Engineering Team Lead",
-    avatar: "https://randomuser.me/api/portraits/men/76.jpg",
+    avatar: "/11.jpg",
     companyName: "Hello Future Technologies \xB7 Spotify",
     text: "Reliable, sharp, and incredibly detail oriented. Samra's MERN expertise saved our launch under a very tight deadline."
   },
   {
     name: "Uzma Zahid",
     role: "Founder & Product Lead",
-    avatar: "https://randomuser.me/api/portraits/women/22.jpg",
+    avatar: "/10.jfif",
     companyName: "ABS Groups \xB7 Nexabot",
     text: "From research to launch, Samra owned the dashboard. Performance, polish, and taste rarely seen in engineers."
   },
     {
-    name: "Sofia Lange",
+    name: "Abdul Wahab",
     role: "Instructor \xB7 MERN Developer",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+    avatar: "/12.jpg",
     companyName: "Hello Future Technologies \xB7 E Commerce",
     text: "An engineer who actually respects design tokens every pixel matched the spec. Best handoff experience we've ever had."
   },
