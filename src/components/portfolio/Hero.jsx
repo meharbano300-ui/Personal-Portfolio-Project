@@ -81,8 +81,8 @@ function Hero() {
         ].map(({ Icon, href }, i) => <a
     key={i}
     href={href}
-    target={href && href.startsWith("http") ? "_blank" : undefined}
-    rel={href && href.startsWith("http") ? "noopener noreferrer" : undefined}
+    target={href && href.startsWith("mailto:") ? "_self" : "_blank"}
+    rel={href && href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
     className="group relative grid h-11 w-11 place-items-center rounded-full border border-gold/40 bg-card/60 backdrop-blur transition hover:bg-gold-gradient hover:border-transparent"
   >
             <Icon className="h-4 w-4 text-[var(--gold-light)] transition group-hover:text-background" />
@@ -114,9 +114,6 @@ function Hero() {
            I build smooth, modern, and powerful websites from scratch by combining beautiful user interfaces 
            with strong backends. <span className="text-[var(--gold-light)]">MERN, Node.js and AI Automation Specialist.</span>
             </p>
-
-
-
 
           <div className="flex flex-wrap items-center gap-5 pt-2">
             <a
