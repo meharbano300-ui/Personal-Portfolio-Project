@@ -15,10 +15,10 @@ function Overview() {
       <div className="mx-auto max-w-7xl px-6 md:pl-24">
         <SectionHeading eyebrow="INTRODUCTION" title="Overview">
          
-          I'm a passionate Full-Stack Web Developer committed to transforming complex ideas into high-performance digital realities 
-          with a solid background in BS-IT and hands-on experience in the tech industry, my tech stack includes React.js, Vite, Tailwind CSS, 
-          JavaScript, Bootstrap, PHP, MongoDB, TypeScript, HTML and Node.js.
-          
+          I'm a passionate Full-Stack Web Developer committed to transforming complex ideas into high-performance 
+          digital realities, with a solid background in BS-IT and hands-on experience in the tech industry.
+           My tech stack includes React.js, Vite, Tailwind CSS, JavaScript, Bootstrap, PHP, MongoDB, TypeScript, 
+           UI/UX Design, Vibe Coding, HTML5, XAMPP, Supabase, Node.js, and Vue.js.
         </SectionHeading>
 
         <div id="expertise" className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5">

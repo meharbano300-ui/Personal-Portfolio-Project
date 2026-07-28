@@ -73,11 +73,12 @@ function Hero() {
     className="fixed left-4 top-1/2 z-30 hidden -translate-y-1/2 flex-col gap-3 md:flex"
   >
         {[
+           { Icon: Linkedin, href: "https://www.linkedin.com/in/samra-amir-93389b26a/" },
           { Icon: Github, href: "https://github.com/meharbano300-ui" },
-          { Icon: Linkedin, href: "https://www.linkedin.com/in/samra-amir-93389b26a/" },
+         
           { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61551449194348" },
           { Icon: MessageSquare, href: "https://wa.me/923271612414" },
-          { Icon: Mail, href: "mailto:meharbano300@gmail.com" }
+          { Icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=meharbano300@gmail.com" }
         ].map(({ Icon, href }, i) => <a
     key={i}
     href={href}
@@ -112,12 +113,12 @@ function Hero() {
           </p>
                <p className="max-w-xl text-base text-foreground/75 md:text-lg">
            I build smooth, modern, and powerful websites from scratch by combining beautiful user interfaces 
-           with strong backends. <span className="text-[var(--gold-light)]">MERN, Node.js and AI Automation Specialist.</span>
+           with strong backends. <span className="text-[var(--gold-light)]">MERN, Stack Developer, and AI Automation Expert.</span>
             </p>
 
           <div className="flex flex-wrap items-center gap-5 pt-2">
             <a
-    href="https://drive.google.com/file/d/15RKi8kkB0qL1C47VFJvObjZIrz4ghFb8/view?usp=drive_link"
+    href="https://drive.google.com/file/d/1EAeDu8bouW2MndJZ7oDmJBArM1WEEOQh/view?usp=drive_link"
     className="group relative inline-flex items-center justify-center p-[2px] transition hover:scale-105"
   >
               <span className="absolute inset-0 border-2 border-[var(--gold)]" />
@@ -131,7 +132,7 @@ function Hero() {
     className="group relative inline-flex items-center justify-center p-[2px] transition hover:scale-105"
   >
               <span className="absolute -inset-1 border border-[var(--gold)]/40" />
-              <span className="relative border-2 border-[var(--gold)] bg-background px-7 py-3 text-sm font-medium text-[var(--gold-light)] transition hover:bg-gold-gradient hover:text-background">
+              <span className="relative border-2 border-[var(--gold)] bg-background px-7 py-3 text-sm font-medium text-[var(--gold-light)] transition hover:text-[var(--gold)]">
                 Hire Me ✦
               </span>
             </a>

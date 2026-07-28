@@ -11,31 +11,32 @@ const stories = [
   },
  {
   name: "Uzma Zahid",
-  role: "Founder & Product Lead",
+  role: "Founder & Team Lead",
   avatar: "/10.jfif",
   companyName: "ABS Groups \xB7 Echo System",
   text: "Working with Samra Amir felt effortless. She translated vague ideas into a luxurious, blazing fast product with real design taste."
 },
   {
-    name: "Hassan Malik",
-    role: "Engineering Team Lead",
-    avatar: "/11.jpg",
-    companyName: "Hello Future Technologies \xB7 Spotify",
-    text: "Reliable, sharp, and incredibly detail oriented. Samra's MERN expertise saved our launch under a very tight deadline."
+    name: "Alen Malkoč",
+    role: "Founder & CEO @ FlyRank.ai",
+    avatar: "/11.jfif",
+    companyName: "FlyRank.ai \xB7 UI/UX Design",
+    text: "Reliable, sharp, and incredibly detail oriented. Samra's UI/UX expertise saved our launch under a very tight deadline."
   },
-  {
+ 
+   {
+  name: "M Faizan Khan",
+  role: "General Operational Manager",
+  avatar: "/18.jpg",
+  companyName: "DevelopersHub Corporation · E Commerce",
+  text: "An engineer who actually built a flawless e-commerce store every pixel matched the spec. Best shopping experience we've ever launched."
+},
+   {
     name: "Uzma Zahid",
-    role: "Founder & Product Lead",
+    role: "Founder & Team Lead",
     avatar: "/10.jfif",
     companyName: "ABS Groups \xB7 Nexabot",
     text: "From research to launch, Samra owned the dashboard. Performance, polish, and taste rarely seen in engineers."
-  },
-    {
-    name: "Abdul Wahab",
-    role: "Instructor \xB7 MERN Developer",
-    avatar: "/12.jpg",
-    companyName: "Hello Future Technologies \xB7 E Commerce",
-    text: "An engineer who actually respects design tokens every pixel matched the spec. Best handoff experience we've ever had."
   },
 ];
 function Stories() {

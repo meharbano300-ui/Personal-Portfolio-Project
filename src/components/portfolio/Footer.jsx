@@ -7,9 +7,10 @@ const links = [
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+   { label: "Stories", href: "#stories" },
   { label: "Contact", href: "#contact" }
 ];
-const services = ["MERN Development", "Vite Web Apps", "API Engineering", "UI / UX Architect", "Vibe Coding Expert", "Web Design Expert"  ];
+const services = ["MERN Development", "Vite Web Apps", "Web Development", "SEO Optimization", "API Engineering", "UI / UX Architect", "Vibe Coding Expert",  ];
 function Footer() {
   return <footer className="relative overflow-hidden border-t border-gold/30 bg-card/40 pt-14 pb-10">
       <Dots count={6} />
@@ -29,19 +30,20 @@ function Footer() {
             Full Stack Web Developer With 5+ Years of Experience.
           </p>
           <div className="mt-5 space-y-2 text-sm text-[var(--gold-light)]/90">
-            <a href="mailto:meharbano300@gmail.com" className="flex items-center gap-2 hover:text-[var(--gold-light)] transition"><Mail className="h-4 w-4 text-[var(--gold)]" /><span>meharbano300@gmail.com</span></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=meharbano300@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[var(--gold-light)] transition"><Mail className="h-4 w-4 text-[var(--gold)]" /><span>meharbano300@gmail.com</span></a>
             <a href="tel:+923271612414"  className="flex items-center gap-2 hover:text-[var(--gold-light)] transition">
              <Phone className="h-4 w-4 text-[var(--gold)]" />
              <span>+92 3271612414</span>
              </a>
             <p className="flex items-center gap-2"><MapPin className="h-4 w-4 text-[var(--gold)]" /><span>Available worldwide · Remote</span></p>
           </div>
-          <div className="mt-5 flex gap-3">
+         <div className="mt-5 flex gap-3">
             {[
-              { Icon: Github, href: "https://github.com/meharbano300-ui" },
               { Icon: Linkedin, href: "https://www.linkedin.com/in/samra-amir-93389b26a/" },
+              { Icon: Github, href: "https://github.com/meharbano300-ui" },
               { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61551449194348" },
-              { Icon: MessageSquare, href: "https://wa.me/923271612414" }
+              { Icon: MessageSquare, href: "https://wa.me/923271612414" },
+              { Icon: Mail, href: "mailto:meharbano300@gmail.com" }
             ].map(({ Icon, href }, i) => <a 
                 key={i} 
                 href={href} 

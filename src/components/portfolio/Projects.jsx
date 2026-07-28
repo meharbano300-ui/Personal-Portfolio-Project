@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Eye, Github, Star, Share2, Twitter, Linkedin, MessageCircle } from "lucide-react";
+import { Eye, Github, Star, Share2, Twitter, Linkedin, MessageCircle, ChevronDown, ChevronUp } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 import { Dots } from "./Dots";
 const projects = [
@@ -15,7 +15,7 @@ const projects = [
   },
   {
     title: "Sparta Tech Solutions",
-    tag: "Tech Company",
+    tag: " IT & Tech Company",
     stack: ["Tailwind CSS", "HTML", "JavaScript"],
     grad: "from-yellow-400 to-orange-600",
     image: "/2.png",
@@ -24,12 +24,39 @@ const projects = [
   },
   {
     title: "ShopSphere ",
-    tag: " E-Commerce",
+    tag: " E-Commerce & Retail",
     stack: ["Vite App", "MongoDB", "Tailwind CSS"],
     grad: "from-emerald-400 to-cyan-600",
     image: "/3.jpeg",
     previewUrl: "https://shopsphere-ecommerce-kappa.vercel.app/",
     githubUrl: "https://github.com/meharbano300-ui/shopsphere"
+  },
+  {
+    title: "Movie Search Application",
+    tag: "Entertainment & Streaming",
+    stack: ["MERN", "React Router", "JWT"],
+    grad: "from-indigo-500 to-purple-600",
+    image: "/13.png",
+    previewUrl: "https://cinexa-movies-search-app.vercel.app/",
+    githubUrl: "https://github.com/meharbano300-ui/CINEXA-Movies-Search-App"
+  },
+  {
+    title: "Maison Atelier",
+    tag: "Branding",
+    stack: ["React.js", "  Tailwind CSS", "Node.js"],
+    grad: "from-sky-400 to-blue-700",
+    image: "/5.jpg",
+    previewUrl: "https://maison-atelier-vite-dark-theme.vercel.app/",
+    githubUrl: "https://github.com/meharbano300-ui/maison-atelier-vite-dark-theme"
+  },
+   {
+   title: "Expense Tracker Application",
+   tag: "FinTech & Finance",
+   stack: ["React.js", "Vite", "GSAP"],
+    grad: "from-rose-400 to-red-700",
+    image: "/15.png",
+    previewUrl: "https://expense-tracker-zeta-three-39.vercel.app/",
+    githubUrl: "https://github.com/meharbano300-ui/Expense-Tracker"
   },
   {
     title: "Xelora Tech",
@@ -41,13 +68,42 @@ const projects = [
     githubUrl: "https://github.com/meharbano300-ui/Xelora-Tech"
   },
   {
-    title: "Maison Atelier",
-    tag: "Branding",
-    stack: ["React.js", "  Tailwind CSS", "Node.js"],
-    grad: "from-sky-400 to-blue-700",
-    image: "/5.jpg",
-    previewUrl: "https://maison-atelier-vite-dark-theme.vercel.app/",
-    githubUrl: "https://github.com/meharbano300-ui/maison-atelier-vite-dark-theme"
+    title: "Blog Post Website",
+    tag: "Content & Publishing",
+    stack: ["React.js", "Node.js", "REST API"],
+    grad: "from-yellow-300 to-amber-700",
+    image: "/14.png",
+    previewUrl: "https://blog-post-website-beige.vercel.app/",
+    githubUrl: "https://github.com/meharbano300-ui/Blog-Post-Website"
+  },
+ 
+   {
+    title: "Weather App - SkyCast",
+    tag: "SAAS Plateform",
+    stack: ["React.js", "API Integeration", "Node.js"],
+    grad: "from-yellow-300 to-amber-700",
+    image: "/8.PNG",
+    previewUrl: "https://dynamic-city-forecast-app.meharbano300.workers.dev/",
+    githubUrl: "https://github.com/meharbano300-ui/dynamic-city-forecast-app"
+  },
+  {
+   title: "Nexus Platform - Entrepreneur & Investor",
+   tag: "Venture Capital & Networking",
+   stack: ["Vite", "JavaScript", "API Integration"],
+    grad: "from-cyan-400 to-blue-700",
+    image: "/17.png",
+    previewUrl: "https://nexus-platform-v13.vercel.app/",
+    githubUrl: "https://github.com/meharbano300-ui/nexus-platform-v13"
+  },
+  
+  {
+    title: "Admin Dashboard UI",
+    tag: "Enterprise & Analytics",
+    stack: ["React.js", "Express.js", "MySQL"],
+    grad: "from-orange-400 to-red-600",
+    image: "/16.png",
+    previewUrl: "https://admin-dashboard-ui-wine.vercel.app/",
+    githubUrl: "https://github.com/meharbano300-ui/Admin-Dashboard-UI"
   },
   {
     title: "NEXABOT",
@@ -58,27 +114,11 @@ const projects = [
     previewUrl: "https://robots-heart-project.vercel.app/",
     githubUrl: "https://github.com/meharbano300-ui/Robots-Heart-Project"
   },
-  {
-    title: "Weather App - SkyCast",
-    tag: "SAAS Plateform",
-    stack: ["React.js", "API Integeration", "Node.js"],
-    grad: "from-yellow-300 to-amber-700",
-    image: "/8.PNG",
-    previewUrl: "https://dynamic-city-forecast-app.meharbano300.workers.dev/",
-    githubUrl: "https://github.com/meharbano300-ui/dynamic-city-forecast-app"
-  },
-  {
-    title: "Synchroyst",
-    tag: "AI Automation",
-    stack: ["React.js", "GSAP", "Vite.js"],
-    grad: "from-rose-400 to-red-700",
-    image: "/6.png",
-    previewUrl: "https://automation-zeta-orcin.vercel.app/",
-    githubUrl: "https://github.com/meharbano300-ui/Automation"
-  }
 ];
 function Projects() {
   const [activeShare, setActiveShare] = useState(null);
+  const [showAll, setShowAll] = useState(false);
+  const visibleProjects = showAll ? projects : projects.slice(0, 8);
   return <section id="projects" className="relative py-16">
       <Dots count={6} />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,transparent,oklch(0.14_0.008_60),transparent)]" />
@@ -89,7 +129,7 @@ function Projects() {
         </SectionHeading>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {projects.map((p, i) => {
+          {visibleProjects.map((p, i) => {
     const shareText = encodeURIComponent(`Check out this amazing project: ${p.title}`);
     const shareUrl = encodeURIComponent(p.previewUrl);
     return <motion.article
@@ -255,6 +295,19 @@ function Projects() {
               </motion.article>;
   })}
         </div>
+
+        {projects.length > 8 && <div className="mt-12 flex justify-center">
+            <button
+      onClick={() => setShowAll(!showAll)}
+      className="group relative inline-flex items-center justify-center transition hover:scale-105"
+    >
+              <span className="absolute -inset-1 border border-[var(--gold)]/40" />
+              <span className="relative flex items-center gap-2 border-2 border-[var(--gold)] bg-background px-7 py-3 text-sm font-medium text-[var(--gold-light)] transition group-hover:text-[var(--gold)]">
+                {showAll ? "Show Less" : "Show More"}
+                {showAll ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+              </span>
+            </button>
+          </div>}
       </div>
     </section>;
 }
