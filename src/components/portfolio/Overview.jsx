@@ -17,8 +17,8 @@ function Overview() {
          
           I'm a passionate Full-Stack Web Developer committed to transforming complex ideas into high-performance 
           digital realities, with a solid background in BS-IT and hands-on experience in the tech industry.
-           My tech stack includes React.js, Vite, Tailwind CSS, JavaScript, Bootstrap, PHP, MongoDB, TypeScript, 
-           UI/UX Design, Vibe Coding, HTML5, XAMPP, Supabase, Node.js, and Vue.js.
+           My tech stack includes React.js, Vite, JavaScript, TypeScript, Node.js, Tailwind CSS, PHP, MongoDB,  
+           Rest APIs, UI/UX Design, Bootstrap, HTML5, XAMPP, Supabase, and Vue.js.
         </SectionHeading>
 
         <div id="expertise" className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5">

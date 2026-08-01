@@ -5,24 +5,14 @@ import { SectionHeading } from "./SectionHeading";
 import { Dots } from "./Dots";
 
 const initialItems = [
-  {
-    icon: Briefcase,
-    role: "Web Development Intern",
-    company: "Hello Future Technologies (Private) Limited · 4 Months ",
-    date: "Nov 2025 — Feb 2026",
-    location: "Remote · Internship  ",
+ {
+    icon: Palette,
+    role: "UI/UX Design Intern",
+    company: "FlyRank AI · 2 Months",
+    date: "July 2026 — Aug 2026",
+    location: "Remote · Internship",
     points: [
-      "During my 4-month internship at Hello Future Technologies, I worked as a Full-Stack Web Developer building responsive interfaces and optimizing backend services. My role involved converting UI/UX designs from Figma into high-performance web applications using React.js, Vite, and Tailwind CSS. I collaborated with senior engineers on full-stack workflows and managed version control via Git."
-    ]
-  },
-  {
-    icon: Rocket,
-    role: "International Client Project",
-    company: "Sparta Tech Solutions · Present ",
-    date: "Mar 2026 — Present",
-    location: " Remote · Freelance Project",
-    points: [
-      "I worked with an international client as a Full-Stack Developer to build a SaaS platform from scratch. I handled the complete development, designed the database, and connected all the APIs. Working directly with the client, I completed the project on time and delivered a smooth, scalable web app."
+      "As a UI/UX Design Intern at Flyrank AI, I created easy-to-use digital designs using Figma for websites and mobile apps. My work involved turning ideas and requirements into clear sketches, clickable prototypes, and neat design layouts to improve user interaction."
     ]
   },
   {
@@ -35,16 +25,28 @@ const initialItems = [
       "Contributing as a MERN Stack Web Developer at DevelopersHub Corporation, building high-performance web applications with JavaScript. Working closely with senior developers to create pixel-perfect user interfaces with Tailwind CSS and optimize backend APIs for smooth data flow, while gaining hands-on experience in GitHub version control."
     ]
   },
-  {
-    icon: Palette,
-    role: "UI/UX Design Intern",
-    company: "FlyRank AI · 2 Months",
-    date: "July 2026 — Aug 2026",
-    location: "Remote · Internship",
+ {
+    icon: Rocket,
+    role: "International Client Project",
+    company: "Sparta Tech Solutions · Present ",
+    date: "Mar 2026 — Present",
+    location: " Remote · Freelance Project",
     points: [
-      "As a UI/UX Design Intern at Flyrank AI, I created easy-to-use digital designs using Figma for websites and mobile apps. My work involved turning ideas and requirements into clear sketches, clickable prototypes, and neat design layouts to improve user interaction."
+      "I worked with an international client as a Full-Stack Developer to build a SaaS platform from scratch. I handled the complete development, designed the database, and connected all the APIs. Working directly with the client, I completed the project on time and delivered a smooth, scalable web app."
     ]
-  }
+  },
+
+    {
+    icon: Briefcase,
+    role: "Web Development Intern",
+    company: "Hello Future Technologies (Private) Limited · 4 Months ",
+    date: "Nov 2025 — Feb 2026",
+    location: "Remote · Internship  ",
+    points: [
+      "During my 4-month internship at Hello Future Technologies, I worked as a Full-Stack Web Developer building responsive interfaces and optimizing backend services. My role involved converting UI/UX designs from Figma into high-performance web applications using React.js, Vite, and Tailwind CSS. I collaborated with senior engineers on full-stack workflows and managed version control via Git."
+    ]
+  },
+ 
 ];
 
 const hiddenItem = {

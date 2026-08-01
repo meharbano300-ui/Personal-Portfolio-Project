@@ -19,15 +19,15 @@ function Footer() {
 
       <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-4 md:pl-24 md:pr-12">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-">
-            <img src={logo} alt="Samra Amir" className="h-14 w-18 object-contain" />
+          <div className="flex items-center  ">
+            <img src={logo} alt="Samra Amir" className="h-14 w-12" />
             <div className="flex flex-col leading-none">
-              <span className="font-display text-2xl italic text-gold-gradient">Samra Amir</span>
-              <span className="text-[10px] tracking-[0.4em] text-[var(--gold)]/80">✦ FULL STACK DEVELOPER</span>
+              <span className="font-display text-2xl italic text-gold-gradient  group flex gap-0 pl-3 md:pl-4">Samra Amir</span>
+              <span className="text-[10px] tracking-[0.4em] text-[var(--gold)]/80  group flex gap-0 pl-3 md:pl-4">✦ FULL-STACK DEVELOPER</span>
             </div>
           </div>
           <p className="mt-5 max-w-md truncate text-sm text-[var(--gold-light)]/80">
-            Full Stack Web Developer With 5+ Years of Experience.
+           ✦ BS-IT Graduate and Full-Stack Web Developer
           </p>
           <div className="mt-5 space-y-2 text-sm text-[var(--gold-light)]/90">
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=meharbano300@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[var(--gold-light)] transition"><Mail className="h-4 w-4 text-[var(--gold)]" /><span>meharbano300@gmail.com</span></a>

@@ -75,7 +75,6 @@ function Hero() {
         {[
            { Icon: Linkedin, href: "https://www.linkedin.com/in/samra-amir-93389b26a/" },
           { Icon: Github, href: "https://github.com/meharbano300-ui" },
-         
           { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61551449194348" },
           { Icon: MessageSquare, href: "https://wa.me/923271612414" },
           { Icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=meharbano300@gmail.com" }
@@ -109,16 +108,19 @@ function Hero() {
             </span>
           </h1>
           <p className="text-sm tracking-[0.3em] text-[var(--gold)]/80">
-            ✦ 5+ YEARS OF EXPERIENCE
+            ✦ FULL-STACK WEB DEVELOPER
           </p>
                <p className="max-w-xl text-base text-foreground/75 md:text-lg">
-           I build smooth, modern, and powerful websites from scratch by combining beautiful user interfaces 
-           with strong backends. <span className="text-[var(--gold-light)]">MERN, Stack Developer, and AI Automation Expert.</span>
+           I build smooth, modern, and powerful websites from scratch <br /> by combining beautiful user interfaces 
+           with strong backends, <span className="text-[var(--gold-light)]"> specializing in MERN Stack development and AI Automation.</span>
             </p>
+
+
+
 
           <div className="flex flex-wrap items-center gap-5 pt-2">
             <a
-    href="https://drive.google.com/file/d/1EAeDu8bouW2MndJZ7oDmJBArM1WEEOQh/view?usp=drive_link"
+    href="https://drive.google.com/file/d/1iL4xbWaSdyGzQUo-SXb2D7VqRy3U0_HH/view?usp=drive_link"
     className="group relative inline-flex items-center justify-center p-[2px] transition hover:scale-105"
   >
               <span className="absolute inset-0 border-2 border-[var(--gold)]" />
